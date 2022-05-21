@@ -1,0 +1,4 @@
+1-Mamdouh Ahmed Mohamed Atia      sec:2   BN:25 --------> Crawler
+2-Donia Gameel Mahmoud Mohamed    sec:1   BN:25 --------> part of indexer-Query processor- phrase searching
+3-Salma Ragab Hassan El-neziely   sec:1   BN:31 --------> part of indexer-ranker-integration of indexer and ranker
+4-Heba Ashraf Raslan              sec:2   BN:31 --------> UI

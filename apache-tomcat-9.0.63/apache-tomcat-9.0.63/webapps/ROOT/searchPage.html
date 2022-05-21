@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Search </title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+    <form action="/search" method="GET" id="search">
+        <div class="button">
+            <button type="submit">Search</button>
+        </div>
+
+
+        <h1>Search</h1>
+
+        <div class="box">
+            <i class="fa fa-search" aria-hidden="true"></i>
+            <input type="text" id="Searchvalue" name="Searchvalue" />
+        </div>
+    </form>
+</body>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+        box-sizing: border-box;
+    }
+    
+    body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(25deg, #3457a3 50%, #559def 50%);
+    }
+    
+    h1 {
+        position: absolute;
+        top: 30%;
+        left: 43%;
+        font-size: 60px;
+        color: white;
+    }
+    
+    .box {
+        width: 500px;
+        height: 50px;
+        background-color: white;
+        border-radius: 30px;
+        display: flex;
+        align-items: center;
+        padding: 20px;
+    }
+    
+    .box>i {
+        font-size: 20px;
+        color: #777;
+    }
+    
+    .box>input {
+        flex: 1;
+        height: 40px;
+        border: none;
+        outline: none;
+        font-size: 18px;
+        padding-left: 10px;
+    }
+    
+    .button {
+        display: flex;
+        height: 50px;
+        padding: 10px;
+        background: #4aaeec;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        overflow: hidden;
+        font-family: "Quicksand", sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        cursor: pointer;
+        position: absolute;
+        top: 60%;
+        left: 49%;
+    }
+    
+    .button:hover {
+        background: #49d0e8;
+    }
+    
+    .button:active {
+        background: #4ad5e8;
+    }
+    
+    .button__text,
+    .button__icon {
+        display: inline-flex;
+        align-items: center;
+        padding: 0 24px;
+        color: #fff;
+        height: 100%;
+    }
+    
+    .button__icon {
+        font-size: 1.5em;
+        background: rgba(0, 0, 0, 0.08);
+    }
+</style>
+
+
+</html>

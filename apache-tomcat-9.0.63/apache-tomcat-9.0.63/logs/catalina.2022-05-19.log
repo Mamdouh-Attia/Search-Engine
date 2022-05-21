@@ -1,0 +1,998 @@
+19-May-2022 16:39:01.643 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.63
+19-May-2022 16:39:01.646 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          May 11 2022 07:52:11 UTC
+19-May-2022 16:39:01.647 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.63.0
+19-May-2022 16:39:01.647 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+19-May-2022 16:39:01.647 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+19-May-2022 16:39:01.647 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+19-May-2022 16:39:01.648 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Amazon Corretto\jdk11.0.14_10
+19-May-2022 16:39:01.648 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.14.1+10-LTS
+19-May-2022 16:39:01.648 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Amazon.com Inc.
+19-May-2022 16:39:01.648 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63
+19-May-2022 16:39:01.648 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63
+19-May-2022 16:39:01.662 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+19-May-2022 16:39:01.662 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+19-May-2022 16:39:01.662 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+19-May-2022 16:39:01.662 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+19-May-2022 16:39:01.663 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+19-May-2022 16:39:01.663 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\conf\logging.properties
+19-May-2022 16:39:01.664 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+19-May-2022 16:39:01.664 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+19-May-2022 16:39:01.665 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+19-May-2022 16:39:01.665 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+19-May-2022 16:39:01.665 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63
+19-May-2022 16:39:01.666 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63
+19-May-2022 16:39:01.666 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\temp
+19-May-2022 16:39:01.677 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [C:\Program Files\Amazon Corretto\jdk11.0.14_10\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\VMware\VMware Player\bin\;C:\Program Files\Amazon Corretto\jdk11.0.14_10\bin;C:\Program Files\Python310\Scripts\;C:\Program Files\Python310\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Azure Data Studio\bin;C:\ProgramData\chocolatey\bin;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\nodejs\;E:\MATLAB\R2017b\runtime\win64;E:\MATLAB\R2017b\bin;C:\Program Files\MongoDB\Server\5.0\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\user\AppData\Local\Microsoft\WindowsApps;C:\Users\user\AppData\Local\Programs\Microsoft VS Code\bin;C:\intelFPGA\20.1\modelsim_ase\win32aloem;C:\intelFPGA_lite\20.1\modelsim_ase\win32aloem;C:\intelFPGA_lite\20.1\modelsim_ae\win32aloem;C:\Users\user\Downloads\quartus\modelsim_ase\win32aloem;C:\MinGW\bin;C:\Users\user\.dotnet\tools;C:\Program Files\Azure Data Studio\bin;C:\Users\user\AppData\Local\GitHubDesktop\bin;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.3.2\bin;;C:\Users\user\AppData\Roaming\npm;C:\Program Files\MongoDB\Server\5.0\bin;;.]
+19-May-2022 16:39:02.020 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+19-May-2022 16:39:02.038 SEVERE [main] org.apache.catalina.util.LifecycleBase.handleSubClassException Failed to initialize component [Connector[HTTP/1.1-8080]]
+	org.apache.catalina.LifecycleException: Protocol handler initialization failed
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1049)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardService.initInternal(StandardService.java:556)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:1042)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:724)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:746)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:305)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:475)
+	Caused by: java.net.BindException: Address already in use: bind
+		at java.base/sun.nio.ch.Net.bind0(Native Method)
+		at java.base/sun.nio.ch.Net.bind(Net.java:459)
+		at java.base/sun.nio.ch.Net.bind(Net.java:448)
+		at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:227)
+		at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:274)
+		at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:229)
+		at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1227)
+		at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1240)
+		at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:603)
+		at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:80)
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1046)
+		... 13 more
+19-May-2022 16:39:02.041 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [616] milliseconds
+19-May-2022 16:39:02.110 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+19-May-2022 16:39:02.110 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.63]
+19-May-2022 16:39:02.121 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\docs]
+19-May-2022 16:39:02.758 WARNING [main] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [346] milliseconds.
+19-May-2022 16:39:02.779 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\docs] has finished in [658] ms
+19-May-2022 16:39:02.780 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\examples]
+19-May-2022 16:39:03.168 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\examples] has finished in [389] ms
+19-May-2022 16:39:03.169 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\host-manager]
+19-May-2022 16:39:03.215 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\host-manager] has finished in [46] ms
+19-May-2022 16:39:03.215 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\manager]
+19-May-2022 16:39:03.257 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\manager] has finished in [42] ms
+19-May-2022 16:39:03.258 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\ROOT]
+19-May-2022 16:39:03.292 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\ROOT] has finished in [33] ms
+19-May-2022 16:39:03.299 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [1257] milliseconds
+19-May-2022 16:42:45.292 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.63
+19-May-2022 16:42:45.295 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          May 11 2022 07:52:11 UTC
+19-May-2022 16:42:45.296 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.63.0
+19-May-2022 16:42:45.296 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+19-May-2022 16:42:45.296 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+19-May-2022 16:42:45.296 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+19-May-2022 16:42:45.296 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Amazon Corretto\jdk11.0.14_10
+19-May-2022 16:42:45.296 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.14.1+10-LTS
+19-May-2022 16:42:45.297 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Amazon.com Inc.
+19-May-2022 16:42:45.297 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63
+19-May-2022 16:42:45.297 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63
+19-May-2022 16:42:45.307 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+19-May-2022 16:42:45.308 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+19-May-2022 16:42:45.308 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+19-May-2022 16:42:45.308 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+19-May-2022 16:42:45.308 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+19-May-2022 16:42:45.309 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\conf\logging.properties
+19-May-2022 16:42:45.309 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+19-May-2022 16:42:45.310 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+19-May-2022 16:42:45.310 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+19-May-2022 16:42:45.311 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+19-May-2022 16:42:45.313 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63
+19-May-2022 16:42:45.315 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63
+19-May-2022 16:42:45.315 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\temp
+19-May-2022 16:42:45.323 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [C:\Program Files\Amazon Corretto\jdk11.0.14_10\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\VMware\VMware Player\bin\;C:\Program Files\Amazon Corretto\jdk11.0.14_10\bin;C:\Program Files\Python310\Scripts\;C:\Program Files\Python310\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Azure Data Studio\bin;C:\ProgramData\chocolatey\bin;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\nodejs\;E:\MATLAB\R2017b\runtime\win64;E:\MATLAB\R2017b\bin;C:\Program Files\MongoDB\Server\5.0\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\user\AppData\Local\Microsoft\WindowsApps;C:\Users\user\AppData\Local\Programs\Microsoft VS Code\bin;C:\intelFPGA\20.1\modelsim_ase\win32aloem;C:\intelFPGA_lite\20.1\modelsim_ase\win32aloem;C:\intelFPGA_lite\20.1\modelsim_ae\win32aloem;C:\Users\user\Downloads\quartus\modelsim_ase\win32aloem;C:\MinGW\bin;C:\Users\user\.dotnet\tools;C:\Program Files\Azure Data Studio\bin;C:\Users\user\AppData\Local\GitHubDesktop\bin;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.3.2\bin;;C:\Users\user\AppData\Roaming\npm;C:\Program Files\MongoDB\Server\5.0\bin;;.]
+19-May-2022 16:42:45.655 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+19-May-2022 16:42:45.673 SEVERE [main] org.apache.catalina.util.LifecycleBase.handleSubClassException Failed to initialize component [Connector[HTTP/1.1-8080]]
+	org.apache.catalina.LifecycleException: Protocol handler initialization failed
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1049)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardService.initInternal(StandardService.java:556)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:1042)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:724)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:746)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:305)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:475)
+	Caused by: java.net.BindException: Address already in use: bind
+		at java.base/sun.nio.ch.Net.bind0(Native Method)
+		at java.base/sun.nio.ch.Net.bind(Net.java:459)
+		at java.base/sun.nio.ch.Net.bind(Net.java:448)
+		at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:227)
+		at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:274)
+		at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:229)
+		at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1227)
+		at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1240)
+		at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:603)
+		at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:80)
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1046)
+		... 13 more
+19-May-2022 16:42:45.676 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [587] milliseconds
+19-May-2022 16:42:45.741 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+19-May-2022 16:42:45.741 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.63]
+19-May-2022 16:42:45.749 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\docs]
+19-May-2022 16:42:46.353 WARNING [main] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [339] milliseconds.
+19-May-2022 16:42:46.382 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\docs] has finished in [633] ms
+19-May-2022 16:42:46.382 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\examples]
+19-May-2022 16:42:46.747 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\examples] has finished in [364] ms
+19-May-2022 16:42:46.747 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\host-manager]
+19-May-2022 16:42:46.789 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\host-manager] has finished in [42] ms
+19-May-2022 16:42:46.790 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\manager]
+19-May-2022 16:42:46.823 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\manager] has finished in [33] ms
+19-May-2022 16:42:46.824 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\ROOT]
+19-May-2022 16:42:46.852 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\ROOT] has finished in [29] ms
+19-May-2022 16:42:46.859 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [1182] milliseconds
+19-May-2022 16:43:52.660 SEVERE [main] org.apache.catalina.startup.Catalina.stopServer Could not contact [localhost:8005] (base port [8005] and offset [0]). Tomcat may not be running.
+19-May-2022 16:43:59.928 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.63
+19-May-2022 16:43:59.931 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          May 11 2022 07:52:11 UTC
+19-May-2022 16:43:59.931 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.63.0
+19-May-2022 16:43:59.931 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+19-May-2022 16:43:59.932 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+19-May-2022 16:43:59.932 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+19-May-2022 16:43:59.932 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Amazon Corretto\jdk11.0.14_10
+19-May-2022 16:43:59.932 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.14.1+10-LTS
+19-May-2022 16:43:59.932 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Amazon.com Inc.
+19-May-2022 16:43:59.933 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63
+19-May-2022 16:43:59.933 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63
+19-May-2022 16:43:59.943 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+19-May-2022 16:43:59.943 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+19-May-2022 16:43:59.944 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+19-May-2022 16:43:59.944 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+19-May-2022 16:43:59.944 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+19-May-2022 16:43:59.944 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\conf\logging.properties
+19-May-2022 16:43:59.945 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+19-May-2022 16:43:59.946 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+19-May-2022 16:43:59.946 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+19-May-2022 16:43:59.947 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+19-May-2022 16:43:59.947 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63
+19-May-2022 16:43:59.947 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63
+19-May-2022 16:43:59.948 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\temp
+19-May-2022 16:43:59.955 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [C:\Program Files\Amazon Corretto\jdk11.0.14_10\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\VMware\VMware Player\bin\;C:\Program Files\Amazon Corretto\jdk11.0.14_10\bin;C:\Program Files\Python310\Scripts\;C:\Program Files\Python310\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Azure Data Studio\bin;C:\ProgramData\chocolatey\bin;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\nodejs\;E:\MATLAB\R2017b\runtime\win64;E:\MATLAB\R2017b\bin;C:\Program Files\MongoDB\Server\5.0\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\user\AppData\Local\Microsoft\WindowsApps;C:\Users\user\AppData\Local\Programs\Microsoft VS Code\bin;C:\intelFPGA\20.1\modelsim_ase\win32aloem;C:\intelFPGA_lite\20.1\modelsim_ase\win32aloem;C:\intelFPGA_lite\20.1\modelsim_ae\win32aloem;C:\Users\user\Downloads\quartus\modelsim_ase\win32aloem;C:\MinGW\bin;C:\Users\user\.dotnet\tools;C:\Program Files\Azure Data Studio\bin;C:\Users\user\AppData\Local\GitHubDesktop\bin;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.3.2\bin;;C:\Users\user\AppData\Roaming\npm;C:\Program Files\MongoDB\Server\5.0\bin;;.]
+19-May-2022 16:44:00.284 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+19-May-2022 16:44:00.304 SEVERE [main] org.apache.catalina.util.LifecycleBase.handleSubClassException Failed to initialize component [Connector[HTTP/1.1-8080]]
+	org.apache.catalina.LifecycleException: Protocol handler initialization failed
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1049)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardService.initInternal(StandardService.java:556)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:1042)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:724)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:746)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:305)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:475)
+	Caused by: java.net.BindException: Address already in use: bind
+		at java.base/sun.nio.ch.Net.bind0(Native Method)
+		at java.base/sun.nio.ch.Net.bind(Net.java:459)
+		at java.base/sun.nio.ch.Net.bind(Net.java:448)
+		at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:227)
+		at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:274)
+		at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:229)
+		at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1227)
+		at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1240)
+		at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:603)
+		at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:80)
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1046)
+		... 13 more
+19-May-2022 16:44:00.307 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [563] milliseconds
+19-May-2022 16:44:00.383 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+19-May-2022 16:44:00.383 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.63]
+19-May-2022 16:44:00.393 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\docs]
+19-May-2022 16:44:01.044 WARNING [main] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [341] milliseconds.
+19-May-2022 16:44:01.069 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\docs] has finished in [676] ms
+19-May-2022 16:44:01.070 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\examples]
+19-May-2022 16:44:01.431 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\examples] has finished in [361] ms
+19-May-2022 16:44:01.431 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\host-manager]
+19-May-2022 16:44:01.476 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\host-manager] has finished in [44] ms
+19-May-2022 16:44:01.476 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\manager]
+19-May-2022 16:44:01.507 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\manager] has finished in [31] ms
+19-May-2022 16:44:01.507 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\ROOT]
+19-May-2022 16:44:01.531 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\ROOT] has finished in [24] ms
+19-May-2022 16:44:01.537 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [1229] milliseconds
+19-May-2022 16:45:04.591 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.63
+19-May-2022 16:45:04.594 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          May 11 2022 07:52:11 UTC
+19-May-2022 16:45:04.595 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.63.0
+19-May-2022 16:45:04.595 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+19-May-2022 16:45:04.595 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+19-May-2022 16:45:04.595 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+19-May-2022 16:45:04.595 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Amazon Corretto\jdk11.0.14_10
+19-May-2022 16:45:04.596 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.14.1+10-LTS
+19-May-2022 16:45:04.596 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Amazon.com Inc.
+19-May-2022 16:45:04.596 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63
+19-May-2022 16:45:04.596 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63
+19-May-2022 16:45:04.607 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+19-May-2022 16:45:04.608 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+19-May-2022 16:45:04.608 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+19-May-2022 16:45:04.609 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+19-May-2022 16:45:04.609 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+19-May-2022 16:45:04.609 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\conf\logging.properties
+19-May-2022 16:45:04.610 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+19-May-2022 16:45:04.610 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+19-May-2022 16:45:04.611 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+19-May-2022 16:45:04.611 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+19-May-2022 16:45:04.612 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63
+19-May-2022 16:45:04.612 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63
+19-May-2022 16:45:04.613 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\temp
+19-May-2022 16:45:04.620 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [C:\Program Files\Amazon Corretto\jdk11.0.14_10\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\VMware\VMware Player\bin\;C:\Program Files\Amazon Corretto\jdk11.0.14_10\bin;C:\Program Files\Python310\Scripts\;C:\Program Files\Python310\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Azure Data Studio\bin;C:\ProgramData\chocolatey\bin;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\nodejs\;E:\MATLAB\R2017b\runtime\win64;E:\MATLAB\R2017b\bin;C:\Program Files\MongoDB\Server\5.0\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\user\AppData\Local\Microsoft\WindowsApps;C:\Users\user\AppData\Local\Programs\Microsoft VS Code\bin;C:\intelFPGA\20.1\modelsim_ase\win32aloem;C:\intelFPGA_lite\20.1\modelsim_ase\win32aloem;C:\intelFPGA_lite\20.1\modelsim_ae\win32aloem;C:\Users\user\Downloads\quartus\modelsim_ase\win32aloem;C:\MinGW\bin;C:\Users\user\.dotnet\tools;C:\Program Files\Azure Data Studio\bin;C:\Users\user\AppData\Local\GitHubDesktop\bin;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.3.2\bin;;C:\Users\user\AppData\Roaming\npm;C:\Program Files\MongoDB\Server\5.0\bin;;.]
+19-May-2022 16:45:04.947 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+19-May-2022 16:45:04.966 SEVERE [main] org.apache.catalina.util.LifecycleBase.handleSubClassException Failed to initialize component [Connector[HTTP/1.1-8080]]
+	org.apache.catalina.LifecycleException: Protocol handler initialization failed
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1049)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardService.initInternal(StandardService.java:556)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:1042)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:724)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:746)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:305)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:475)
+	Caused by: java.net.BindException: Address already in use: bind
+		at java.base/sun.nio.ch.Net.bind0(Native Method)
+		at java.base/sun.nio.ch.Net.bind(Net.java:459)
+		at java.base/sun.nio.ch.Net.bind(Net.java:448)
+		at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:227)
+		at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:274)
+		at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:229)
+		at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1227)
+		at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1240)
+		at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:603)
+		at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:80)
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1046)
+		... 13 more
+19-May-2022 16:45:04.968 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [571] milliseconds
+19-May-2022 16:45:05.033 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+19-May-2022 16:45:05.033 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.63]
+19-May-2022 16:45:05.042 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\docs]
+19-May-2022 16:45:05.659 WARNING [main] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [341] milliseconds.
+19-May-2022 16:45:05.695 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\docs] has finished in [652] ms
+19-May-2022 16:45:05.695 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\examples]
+19-May-2022 16:45:06.089 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\examples] has finished in [394] ms
+19-May-2022 16:45:06.089 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\host-manager]
+19-May-2022 16:45:06.129 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\host-manager] has finished in [40] ms
+19-May-2022 16:45:06.129 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\manager]
+19-May-2022 16:45:06.161 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\manager] has finished in [32] ms
+19-May-2022 16:45:06.162 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\ROOT]
+19-May-2022 16:45:06.184 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\ROOT] has finished in [22] ms
+19-May-2022 16:45:06.191 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [1221] milliseconds
+19-May-2022 16:45:06.199 SEVERE [main] org.apache.catalina.core.StandardServer.await Failed to create server shutdown socket on address [localhost] and port [8005] (base port [8005] and offset [0])
+	java.net.BindException: Address already in use: NET_Bind
+		at java.base/java.net.PlainSocketImpl.bind0(Native Method)
+		at java.base/java.net.PlainSocketImpl.socketBind(PlainSocketImpl.java:132)
+		at java.base/java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:452)
+		at java.base/java.net.ServerSocket.bind(ServerSocket.java:395)
+		at java.base/java.net.ServerSocket.<init>(ServerSocket.java:257)
+		at org.apache.catalina.core.StandardServer.await(StandardServer.java:577)
+		at org.apache.catalina.startup.Catalina.await(Catalina.java:864)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:810)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
+19-May-2022 16:45:06.200 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+19-May-2022 16:45:06.200 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+19-May-2022 16:45:06.221 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+19-May-2022 16:45:06.222 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+19-May-2022 16:48:49.459 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.63
+19-May-2022 16:48:49.462 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          May 11 2022 07:52:11 UTC
+19-May-2022 16:48:49.463 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.63.0
+19-May-2022 16:48:49.463 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+19-May-2022 16:48:49.463 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+19-May-2022 16:48:49.463 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+19-May-2022 16:48:49.463 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Amazon Corretto\jdk11.0.14_10
+19-May-2022 16:48:49.463 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.14.1+10-LTS
+19-May-2022 16:48:49.464 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Amazon.com Inc.
+19-May-2022 16:48:49.464 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63
+19-May-2022 16:48:49.464 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63
+19-May-2022 16:48:49.474 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+19-May-2022 16:48:49.475 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+19-May-2022 16:48:49.476 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+19-May-2022 16:48:49.476 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+19-May-2022 16:48:49.476 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+19-May-2022 16:48:49.477 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\conf\logging.properties
+19-May-2022 16:48:49.478 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+19-May-2022 16:48:49.479 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+19-May-2022 16:48:49.480 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+19-May-2022 16:48:49.481 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+19-May-2022 16:48:49.481 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63
+19-May-2022 16:48:49.481 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63
+19-May-2022 16:48:49.482 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\temp
+19-May-2022 16:48:49.491 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [C:\Program Files\Amazon Corretto\jdk11.0.14_10\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\VMware\VMware Player\bin\;C:\Program Files\Amazon Corretto\jdk11.0.14_10\bin;C:\Program Files\Python310\Scripts\;C:\Program Files\Python310\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Azure Data Studio\bin;C:\ProgramData\chocolatey\bin;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\nodejs\;E:\MATLAB\R2017b\runtime\win64;E:\MATLAB\R2017b\bin;C:\Program Files\MongoDB\Server\5.0\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\user\AppData\Local\Microsoft\WindowsApps;C:\Users\user\AppData\Local\Programs\Microsoft VS Code\bin;C:\intelFPGA\20.1\modelsim_ase\win32aloem;C:\intelFPGA_lite\20.1\modelsim_ase\win32aloem;C:\intelFPGA_lite\20.1\modelsim_ae\win32aloem;C:\Users\user\Downloads\quartus\modelsim_ase\win32aloem;C:\MinGW\bin;C:\Users\user\.dotnet\tools;C:\Program Files\Azure Data Studio\bin;C:\Users\user\AppData\Local\GitHubDesktop\bin;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.3.2\bin;;C:\Users\user\AppData\Roaming\npm;C:\Program Files\MongoDB\Server\5.0\bin;;.]
+19-May-2022 16:48:49.837 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+19-May-2022 16:48:49.855 SEVERE [main] org.apache.catalina.util.LifecycleBase.handleSubClassException Failed to initialize component [Connector[HTTP/1.1-8080]]
+	org.apache.catalina.LifecycleException: Protocol handler initialization failed
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1049)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardService.initInternal(StandardService.java:556)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:1042)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:724)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:746)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:305)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:475)
+	Caused by: java.net.BindException: Address already in use: bind
+		at java.base/sun.nio.ch.Net.bind0(Native Method)
+		at java.base/sun.nio.ch.Net.bind(Net.java:459)
+		at java.base/sun.nio.ch.Net.bind(Net.java:448)
+		at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:227)
+		at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:274)
+		at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:229)
+		at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1227)
+		at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1240)
+		at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:603)
+		at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:80)
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1046)
+		... 13 more
+19-May-2022 16:48:49.857 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [593] milliseconds
+19-May-2022 16:48:49.929 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+19-May-2022 16:48:49.929 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.63]
+19-May-2022 16:48:49.943 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\docs]
+19-May-2022 16:48:50.590 WARNING [main] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [369] milliseconds.
+19-May-2022 16:48:50.625 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\docs] has finished in [682] ms
+19-May-2022 16:48:50.626 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\examples]
+19-May-2022 16:48:51.017 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\examples] has finished in [392] ms
+19-May-2022 16:48:51.017 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\host-manager]
+19-May-2022 16:48:51.060 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\host-manager] has finished in [43] ms
+19-May-2022 16:48:51.060 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\manager]
+19-May-2022 16:48:51.094 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\manager] has finished in [33] ms
+19-May-2022 16:48:51.095 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\ROOT]
+19-May-2022 16:48:51.121 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\ROOT] has finished in [26] ms
+19-May-2022 16:48:51.128 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [1270] milliseconds
+19-May-2022 16:52:35.840 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.63
+19-May-2022 16:52:35.843 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          May 11 2022 07:52:11 UTC
+19-May-2022 16:52:35.843 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.63.0
+19-May-2022 16:52:35.844 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+19-May-2022 16:52:35.844 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+19-May-2022 16:52:35.844 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+19-May-2022 16:52:35.844 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Amazon Corretto\jdk11.0.14_10
+19-May-2022 16:52:35.844 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.14.1+10-LTS
+19-May-2022 16:52:35.845 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Amazon.com Inc.
+19-May-2022 16:52:35.845 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63
+19-May-2022 16:52:35.845 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63
+19-May-2022 16:52:35.857 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+19-May-2022 16:52:35.857 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+19-May-2022 16:52:35.857 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+19-May-2022 16:52:35.857 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+19-May-2022 16:52:35.858 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+19-May-2022 16:52:35.858 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\conf\logging.properties
+19-May-2022 16:52:35.859 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+19-May-2022 16:52:35.859 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+19-May-2022 16:52:35.860 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+19-May-2022 16:52:35.860 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+19-May-2022 16:52:35.862 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63
+19-May-2022 16:52:35.862 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63
+19-May-2022 16:52:35.862 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\temp
+19-May-2022 16:52:35.870 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [C:\Program Files\Amazon Corretto\jdk11.0.14_10\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\VMware\VMware Player\bin\;C:\Program Files\Amazon Corretto\jdk11.0.14_10\bin;C:\Program Files\Python310\Scripts\;C:\Program Files\Python310\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Azure Data Studio\bin;C:\ProgramData\chocolatey\bin;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\nodejs\;E:\MATLAB\R2017b\runtime\win64;E:\MATLAB\R2017b\bin;C:\Program Files\MongoDB\Server\5.0\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\user\AppData\Local\Microsoft\WindowsApps;C:\Users\user\AppData\Local\Programs\Microsoft VS Code\bin;C:\intelFPGA\20.1\modelsim_ase\win32aloem;C:\intelFPGA_lite\20.1\modelsim_ase\win32aloem;C:\intelFPGA_lite\20.1\modelsim_ae\win32aloem;C:\Users\user\Downloads\quartus\modelsim_ase\win32aloem;C:\MinGW\bin;C:\Users\user\.dotnet\tools;C:\Program Files\Azure Data Studio\bin;C:\Users\user\AppData\Local\GitHubDesktop\bin;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.3.2\bin;;C:\Users\user\AppData\Roaming\npm;C:\Program Files\MongoDB\Server\5.0\bin;;.]
+19-May-2022 16:52:36.199 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-9090"]
+19-May-2022 16:52:36.228 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [577] milliseconds
+19-May-2022 16:52:36.296 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+19-May-2022 16:52:36.296 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.63]
+19-May-2022 16:52:36.304 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\docs]
+19-May-2022 16:52:36.918 WARNING [main] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [343] milliseconds.
+19-May-2022 16:52:36.939 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\docs] has finished in [634] ms
+19-May-2022 16:52:36.940 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\examples]
+19-May-2022 16:52:37.266 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\examples] has finished in [327] ms
+19-May-2022 16:52:37.266 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\host-manager]
+19-May-2022 16:52:37.300 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\host-manager] has finished in [34] ms
+19-May-2022 16:52:37.301 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\manager]
+19-May-2022 16:52:37.330 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\manager] has finished in [29] ms
+19-May-2022 16:52:37.330 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\ROOT]
+19-May-2022 16:52:37.354 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\ROOT] has finished in [24] ms
+19-May-2022 16:52:37.359 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-9090"]
+19-May-2022 16:52:37.704 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [1473] milliseconds
+19-May-2022 16:52:37.711 SEVERE [main] org.apache.catalina.core.StandardServer.await Failed to create server shutdown socket on address [localhost] and port [8005] (base port [8005] and offset [0])
+	java.net.BindException: Address already in use: NET_Bind
+		at java.base/java.net.PlainSocketImpl.bind0(Native Method)
+		at java.base/java.net.PlainSocketImpl.socketBind(PlainSocketImpl.java:132)
+		at java.base/java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:452)
+		at java.base/java.net.ServerSocket.bind(ServerSocket.java:395)
+		at java.base/java.net.ServerSocket.<init>(ServerSocket.java:257)
+		at org.apache.catalina.core.StandardServer.await(StandardServer.java:577)
+		at org.apache.catalina.startup.Catalina.await(Catalina.java:864)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:810)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
+19-May-2022 16:52:37.712 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-9090"]
+19-May-2022 16:52:38.026 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+19-May-2022 16:52:38.044 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-9090"]
+19-May-2022 16:52:38.052 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-9090"]
+19-May-2022 16:52:46.944 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.63
+19-May-2022 16:52:46.947 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          May 11 2022 07:52:11 UTC
+19-May-2022 16:52:46.947 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.63.0
+19-May-2022 16:52:46.948 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+19-May-2022 16:52:46.948 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+19-May-2022 16:52:46.948 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+19-May-2022 16:52:46.948 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Amazon Corretto\jdk11.0.14_10
+19-May-2022 16:52:46.948 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.14.1+10-LTS
+19-May-2022 16:52:46.948 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Amazon.com Inc.
+19-May-2022 16:52:46.948 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63
+19-May-2022 16:52:46.949 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63
+19-May-2022 16:52:46.959 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+19-May-2022 16:52:46.959 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+19-May-2022 16:52:46.959 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+19-May-2022 16:52:46.960 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+19-May-2022 16:52:46.961 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+19-May-2022 16:52:46.962 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\conf\logging.properties
+19-May-2022 16:52:46.962 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+19-May-2022 16:52:46.963 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+19-May-2022 16:52:46.964 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+19-May-2022 16:52:46.964 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+19-May-2022 16:52:46.964 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63
+19-May-2022 16:52:46.965 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63
+19-May-2022 16:52:46.966 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\temp
+19-May-2022 16:52:46.973 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [C:\Program Files\Amazon Corretto\jdk11.0.14_10\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\VMware\VMware Player\bin\;C:\Program Files\Amazon Corretto\jdk11.0.14_10\bin;C:\Program Files\Python310\Scripts\;C:\Program Files\Python310\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Azure Data Studio\bin;C:\ProgramData\chocolatey\bin;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\nodejs\;E:\MATLAB\R2017b\runtime\win64;E:\MATLAB\R2017b\bin;C:\Program Files\MongoDB\Server\5.0\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\user\AppData\Local\Microsoft\WindowsApps;C:\Users\user\AppData\Local\Programs\Microsoft VS Code\bin;C:\intelFPGA\20.1\modelsim_ase\win32aloem;C:\intelFPGA_lite\20.1\modelsim_ase\win32aloem;C:\intelFPGA_lite\20.1\modelsim_ae\win32aloem;C:\Users\user\Downloads\quartus\modelsim_ase\win32aloem;C:\MinGW\bin;C:\Users\user\.dotnet\tools;C:\Program Files\Azure Data Studio\bin;C:\Users\user\AppData\Local\GitHubDesktop\bin;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.3.2\bin;;C:\Users\user\AppData\Roaming\npm;C:\Program Files\MongoDB\Server\5.0\bin;;.]
+19-May-2022 16:52:47.273 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-9090"]
+19-May-2022 16:52:47.299 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [557] milliseconds
+19-May-2022 16:52:47.365 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+19-May-2022 16:52:47.365 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.63]
+19-May-2022 16:52:47.373 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\docs]
+19-May-2022 16:52:47.964 WARNING [main] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [338] milliseconds.
+19-May-2022 16:52:47.982 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\docs] has finished in [608] ms
+19-May-2022 16:52:47.982 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\examples]
+19-May-2022 16:52:48.341 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\examples] has finished in [359] ms
+19-May-2022 16:52:48.342 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\host-manager]
+19-May-2022 16:52:48.376 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\host-manager] has finished in [34] ms
+19-May-2022 16:52:48.377 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\manager]
+19-May-2022 16:52:48.406 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\manager] has finished in [29] ms
+19-May-2022 16:52:48.407 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\ROOT]
+19-May-2022 16:52:48.434 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\ROOT] has finished in [26] ms
+19-May-2022 16:52:48.439 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-9090"]
+19-May-2022 16:52:48.788 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [1488] milliseconds
+19-May-2022 16:52:48.795 SEVERE [main] org.apache.catalina.core.StandardServer.await Failed to create server shutdown socket on address [localhost] and port [8005] (base port [8005] and offset [0])
+	java.net.BindException: Address already in use: NET_Bind
+		at java.base/java.net.PlainSocketImpl.bind0(Native Method)
+		at java.base/java.net.PlainSocketImpl.socketBind(PlainSocketImpl.java:132)
+		at java.base/java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:452)
+		at java.base/java.net.ServerSocket.bind(ServerSocket.java:395)
+		at java.base/java.net.ServerSocket.<init>(ServerSocket.java:257)
+		at org.apache.catalina.core.StandardServer.await(StandardServer.java:577)
+		at org.apache.catalina.startup.Catalina.await(Catalina.java:864)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:810)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
+19-May-2022 16:52:48.796 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-9090"]
+19-May-2022 16:52:49.119 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+19-May-2022 16:52:49.136 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-9090"]
+19-May-2022 16:52:49.150 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-9090"]
+19-May-2022 16:54:42.879 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.63
+19-May-2022 16:54:42.881 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          May 11 2022 07:52:11 UTC
+19-May-2022 16:54:42.882 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.63.0
+19-May-2022 16:54:42.882 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+19-May-2022 16:54:42.882 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+19-May-2022 16:54:42.882 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+19-May-2022 16:54:42.882 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Amazon Corretto\jdk11.0.14_10
+19-May-2022 16:54:42.883 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.14.1+10-LTS
+19-May-2022 16:54:42.883 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Amazon.com Inc.
+19-May-2022 16:54:42.883 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63
+19-May-2022 16:54:42.883 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63
+19-May-2022 16:54:42.894 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+19-May-2022 16:54:42.895 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+19-May-2022 16:54:42.895 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+19-May-2022 16:54:42.895 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+19-May-2022 16:54:42.895 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+19-May-2022 16:54:42.896 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\conf\logging.properties
+19-May-2022 16:54:42.897 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+19-May-2022 16:54:42.897 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+19-May-2022 16:54:42.898 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+19-May-2022 16:54:42.898 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+19-May-2022 16:54:42.898 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63
+19-May-2022 16:54:42.899 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63
+19-May-2022 16:54:42.899 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\temp
+19-May-2022 16:54:42.906 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [C:\Program Files\Amazon Corretto\jdk11.0.14_10\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\VMware\VMware Player\bin\;C:\Program Files\Amazon Corretto\jdk11.0.14_10\bin;C:\Program Files\Python310\Scripts\;C:\Program Files\Python310\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Azure Data Studio\bin;C:\ProgramData\chocolatey\bin;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\nodejs\;E:\MATLAB\R2017b\runtime\win64;E:\MATLAB\R2017b\bin;C:\Program Files\MongoDB\Server\5.0\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\user\AppData\Local\Microsoft\WindowsApps;C:\Users\user\AppData\Local\Programs\Microsoft VS Code\bin;C:\intelFPGA\20.1\modelsim_ase\win32aloem;C:\intelFPGA_lite\20.1\modelsim_ase\win32aloem;C:\intelFPGA_lite\20.1\modelsim_ae\win32aloem;C:\Users\user\Downloads\quartus\modelsim_ase\win32aloem;C:\MinGW\bin;C:\Users\user\.dotnet\tools;C:\Program Files\Azure Data Studio\bin;C:\Users\user\AppData\Local\GitHubDesktop\bin;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.3.2\bin;;C:\Users\user\AppData\Roaming\npm;C:\Program Files\MongoDB\Server\5.0\bin;;.]
+19-May-2022 16:54:43.184 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-9090"]
+19-May-2022 16:54:43.211 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [531] milliseconds
+19-May-2022 16:54:43.277 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+19-May-2022 16:54:43.277 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.63]
+19-May-2022 16:54:43.286 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\docs]
+19-May-2022 16:54:43.892 WARNING [main] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [333] milliseconds.
+19-May-2022 16:54:43.912 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\docs] has finished in [627] ms
+19-May-2022 16:54:43.913 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\examples]
+19-May-2022 16:54:44.259 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\examples] has finished in [346] ms
+19-May-2022 16:54:44.260 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\host-manager]
+19-May-2022 16:54:44.294 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\host-manager] has finished in [34] ms
+19-May-2022 16:54:44.295 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\manager]
+19-May-2022 16:54:44.324 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\manager] has finished in [28] ms
+19-May-2022 16:54:44.324 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\ROOT]
+19-May-2022 16:54:44.347 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\ROOT] has finished in [23] ms
+19-May-2022 16:54:44.352 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-9090"]
+19-May-2022 16:54:44.692 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [1479] milliseconds
+19-May-2022 16:54:44.698 SEVERE [main] org.apache.catalina.core.StandardServer.await Failed to create server shutdown socket on address [localhost] and port [8005] (base port [8005] and offset [0])
+	java.net.BindException: Address already in use: NET_Bind
+		at java.base/java.net.PlainSocketImpl.bind0(Native Method)
+		at java.base/java.net.PlainSocketImpl.socketBind(PlainSocketImpl.java:132)
+		at java.base/java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:452)
+		at java.base/java.net.ServerSocket.bind(ServerSocket.java:395)
+		at java.base/java.net.ServerSocket.<init>(ServerSocket.java:257)
+		at org.apache.catalina.core.StandardServer.await(StandardServer.java:577)
+		at org.apache.catalina.startup.Catalina.await(Catalina.java:864)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:810)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
+19-May-2022 16:54:44.700 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-9090"]
+19-May-2022 16:54:45.016 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+19-May-2022 16:54:45.033 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-9090"]
+19-May-2022 16:54:45.054 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-9090"]
+19-May-2022 16:54:50.863 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.63
+19-May-2022 16:54:50.866 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          May 11 2022 07:52:11 UTC
+19-May-2022 16:54:50.866 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.63.0
+19-May-2022 16:54:50.867 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+19-May-2022 16:54:50.867 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+19-May-2022 16:54:50.867 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+19-May-2022 16:54:50.867 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Amazon Corretto\jdk11.0.14_10
+19-May-2022 16:54:50.867 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.14.1+10-LTS
+19-May-2022 16:54:50.867 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Amazon.com Inc.
+19-May-2022 16:54:50.868 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63
+19-May-2022 16:54:50.868 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63
+19-May-2022 16:54:50.880 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+19-May-2022 16:54:50.880 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+19-May-2022 16:54:50.880 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+19-May-2022 16:54:50.881 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+19-May-2022 16:54:50.881 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+19-May-2022 16:54:50.881 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\conf\logging.properties
+19-May-2022 16:54:50.882 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+19-May-2022 16:54:50.882 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+19-May-2022 16:54:50.883 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+19-May-2022 16:54:50.887 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+19-May-2022 16:54:50.888 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63
+19-May-2022 16:54:50.888 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63
+19-May-2022 16:54:50.888 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\temp
+19-May-2022 16:54:50.896 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [C:\Program Files\Amazon Corretto\jdk11.0.14_10\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\VMware\VMware Player\bin\;C:\Program Files\Amazon Corretto\jdk11.0.14_10\bin;C:\Program Files\Python310\Scripts\;C:\Program Files\Python310\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Azure Data Studio\bin;C:\ProgramData\chocolatey\bin;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\nodejs\;E:\MATLAB\R2017b\runtime\win64;E:\MATLAB\R2017b\bin;C:\Program Files\MongoDB\Server\5.0\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\user\AppData\Local\Microsoft\WindowsApps;C:\Users\user\AppData\Local\Programs\Microsoft VS Code\bin;C:\intelFPGA\20.1\modelsim_ase\win32aloem;C:\intelFPGA_lite\20.1\modelsim_ase\win32aloem;C:\intelFPGA_lite\20.1\modelsim_ae\win32aloem;C:\Users\user\Downloads\quartus\modelsim_ase\win32aloem;C:\MinGW\bin;C:\Users\user\.dotnet\tools;C:\Program Files\Azure Data Studio\bin;C:\Users\user\AppData\Local\GitHubDesktop\bin;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.3.2\bin;;C:\Users\user\AppData\Roaming\npm;C:\Program Files\MongoDB\Server\5.0\bin;;.]
+19-May-2022 16:54:51.240 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-9090"]
+19-May-2022 16:54:51.266 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [601] milliseconds
+19-May-2022 16:54:51.333 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+19-May-2022 16:54:51.333 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.63]
+19-May-2022 16:54:51.342 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\docs]
+19-May-2022 16:54:51.930 WARNING [main] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [343] milliseconds.
+19-May-2022 16:54:58.587 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\docs] has finished in [7,245] ms
+19-May-2022 16:54:58.588 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\examples]
+19-May-2022 16:54:58.921 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\examples] has finished in [333] ms
+19-May-2022 16:54:58.921 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\host-manager]
+19-May-2022 16:54:58.953 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\host-manager] has finished in [32] ms
+19-May-2022 16:54:58.953 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\manager]
+19-May-2022 16:54:58.984 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\manager] has finished in [31] ms
+19-May-2022 16:54:58.984 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\ROOT]
+19-May-2022 16:54:59.008 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\ROOT] has finished in [24] ms
+19-May-2022 16:54:59.013 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-9090"]
+19-May-2022 16:54:59.360 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [8093] milliseconds
+19-May-2022 16:54:59.367 SEVERE [main] org.apache.catalina.core.StandardServer.await Failed to create server shutdown socket on address [localhost] and port [8005] (base port [8005] and offset [0])
+	java.net.BindException: Address already in use: NET_Bind
+		at java.base/java.net.PlainSocketImpl.bind0(Native Method)
+		at java.base/java.net.PlainSocketImpl.socketBind(PlainSocketImpl.java:132)
+		at java.base/java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:452)
+		at java.base/java.net.ServerSocket.bind(ServerSocket.java:395)
+		at java.base/java.net.ServerSocket.<init>(ServerSocket.java:257)
+		at org.apache.catalina.core.StandardServer.await(StandardServer.java:577)
+		at org.apache.catalina.startup.Catalina.await(Catalina.java:864)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:810)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
+19-May-2022 16:54:59.369 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-9090"]
+19-May-2022 16:54:59.687 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+19-May-2022 16:54:59.704 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-9090"]
+19-May-2022 16:54:59.715 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-9090"]
+19-May-2022 16:55:03.076 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.63
+19-May-2022 16:55:03.080 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          May 11 2022 07:52:11 UTC
+19-May-2022 16:55:03.080 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.63.0
+19-May-2022 16:55:03.080 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+19-May-2022 16:55:03.081 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+19-May-2022 16:55:03.081 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+19-May-2022 16:55:03.081 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Amazon Corretto\jdk11.0.14_10
+19-May-2022 16:55:03.081 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.14.1+10-LTS
+19-May-2022 16:55:03.082 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Amazon.com Inc.
+19-May-2022 16:55:03.082 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63
+19-May-2022 16:55:03.082 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63
+19-May-2022 16:55:03.096 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+19-May-2022 16:55:03.096 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+19-May-2022 16:55:03.096 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+19-May-2022 16:55:03.097 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+19-May-2022 16:55:03.097 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+19-May-2022 16:55:03.098 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\conf\logging.properties
+19-May-2022 16:55:03.098 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+19-May-2022 16:55:03.099 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+19-May-2022 16:55:03.099 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+19-May-2022 16:55:03.100 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+19-May-2022 16:55:03.101 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63
+19-May-2022 16:55:03.101 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63
+19-May-2022 16:55:03.102 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\temp
+19-May-2022 16:55:03.109 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [C:\Program Files\Amazon Corretto\jdk11.0.14_10\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\VMware\VMware Player\bin\;C:\Program Files\Amazon Corretto\jdk11.0.14_10\bin;C:\Program Files\Python310\Scripts\;C:\Program Files\Python310\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Azure Data Studio\bin;C:\ProgramData\chocolatey\bin;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\nodejs\;E:\MATLAB\R2017b\runtime\win64;E:\MATLAB\R2017b\bin;C:\Program Files\MongoDB\Server\5.0\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\user\AppData\Local\Microsoft\WindowsApps;C:\Users\user\AppData\Local\Programs\Microsoft VS Code\bin;C:\intelFPGA\20.1\modelsim_ase\win32aloem;C:\intelFPGA_lite\20.1\modelsim_ase\win32aloem;C:\intelFPGA_lite\20.1\modelsim_ae\win32aloem;C:\Users\user\Downloads\quartus\modelsim_ase\win32aloem;C:\MinGW\bin;C:\Users\user\.dotnet\tools;C:\Program Files\Azure Data Studio\bin;C:\Users\user\AppData\Local\GitHubDesktop\bin;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.3.2\bin;;C:\Users\user\AppData\Roaming\npm;C:\Program Files\MongoDB\Server\5.0\bin;;.]
+19-May-2022 16:55:03.418 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-9090"]
+19-May-2022 16:55:03.444 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [576] milliseconds
+19-May-2022 16:55:03.511 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+19-May-2022 16:55:03.511 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.63]
+19-May-2022 16:55:03.522 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\docs]
+19-May-2022 16:55:04.119 WARNING [main] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [340] milliseconds.
+19-May-2022 16:55:05.672 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\docs] has finished in [2,150] ms
+19-May-2022 16:55:05.673 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\examples]
+19-May-2022 16:55:06.001 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\examples] has finished in [329] ms
+19-May-2022 16:55:06.002 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\host-manager]
+19-May-2022 16:55:06.041 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\host-manager] has finished in [38] ms
+19-May-2022 16:55:06.041 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\manager]
+19-May-2022 16:55:06.070 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\manager] has finished in [29] ms
+19-May-2022 16:55:06.071 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\ROOT]
+19-May-2022 16:55:06.094 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\ROOT] has finished in [23] ms
+19-May-2022 16:55:06.101 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-9090"]
+19-May-2022 16:55:06.450 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [3005] milliseconds
+19-May-2022 16:55:06.457 SEVERE [main] org.apache.catalina.core.StandardServer.await Failed to create server shutdown socket on address [localhost] and port [8005] (base port [8005] and offset [0])
+	java.net.BindException: Address already in use: NET_Bind
+		at java.base/java.net.PlainSocketImpl.bind0(Native Method)
+		at java.base/java.net.PlainSocketImpl.socketBind(PlainSocketImpl.java:132)
+		at java.base/java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:452)
+		at java.base/java.net.ServerSocket.bind(ServerSocket.java:395)
+		at java.base/java.net.ServerSocket.<init>(ServerSocket.java:257)
+		at org.apache.catalina.core.StandardServer.await(StandardServer.java:577)
+		at org.apache.catalina.startup.Catalina.await(Catalina.java:864)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:810)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
+19-May-2022 16:55:06.458 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-9090"]
+19-May-2022 16:55:06.772 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+19-May-2022 16:55:06.788 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-9090"]
+19-May-2022 16:55:06.806 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-9090"]
+19-May-2022 16:57:21.501 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.63
+19-May-2022 16:57:21.504 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          May 11 2022 07:52:11 UTC
+19-May-2022 16:57:21.505 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.63.0
+19-May-2022 16:57:21.505 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+19-May-2022 16:57:21.505 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+19-May-2022 16:57:21.505 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+19-May-2022 16:57:21.505 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Amazon Corretto\jdk11.0.14_10
+19-May-2022 16:57:21.505 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.14.1+10-LTS
+19-May-2022 16:57:21.505 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Amazon.com Inc.
+19-May-2022 16:57:21.505 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63
+19-May-2022 16:57:21.506 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63
+19-May-2022 16:57:21.514 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+19-May-2022 16:57:21.514 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+19-May-2022 16:57:21.515 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+19-May-2022 16:57:21.515 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+19-May-2022 16:57:21.515 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+19-May-2022 16:57:21.515 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\conf\logging.properties
+19-May-2022 16:57:21.516 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+19-May-2022 16:57:21.516 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+19-May-2022 16:57:21.517 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+19-May-2022 16:57:21.521 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+19-May-2022 16:57:21.522 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63
+19-May-2022 16:57:21.522 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63
+19-May-2022 16:57:21.523 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\temp
+19-May-2022 16:57:21.529 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [C:\Program Files\Amazon Corretto\jdk11.0.14_10\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\VMware\VMware Player\bin\;C:\Program Files\Amazon Corretto\jdk11.0.14_10\bin;C:\Program Files\Python310\Scripts\;C:\Program Files\Python310\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Azure Data Studio\bin;C:\ProgramData\chocolatey\bin;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\nodejs\;E:\MATLAB\R2017b\runtime\win64;E:\MATLAB\R2017b\bin;C:\Program Files\MongoDB\Server\5.0\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\user\AppData\Local\Microsoft\WindowsApps;C:\Users\user\AppData\Local\Programs\Microsoft VS Code\bin;C:\intelFPGA\20.1\modelsim_ase\win32aloem;C:\intelFPGA_lite\20.1\modelsim_ase\win32aloem;C:\intelFPGA_lite\20.1\modelsim_ae\win32aloem;C:\Users\user\Downloads\quartus\modelsim_ase\win32aloem;C:\MinGW\bin;C:\Users\user\.dotnet\tools;C:\Users\user\AppData\Local\GitHubDesktop\bin;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.3.2\bin;C:\Users\user\AppData\Roaming\npm;.]
+19-May-2022 16:57:21.794 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-9090"]
+19-May-2022 16:57:21.815 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [463] milliseconds
+19-May-2022 16:57:21.864 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+19-May-2022 16:57:21.865 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.63]
+19-May-2022 16:57:21.873 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\docs]
+19-May-2022 16:57:22.386 WARNING [main] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [320] milliseconds.
+19-May-2022 16:57:22.404 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\docs] has finished in [531] ms
+19-May-2022 16:57:22.404 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\examples]
+19-May-2022 16:57:22.713 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\examples] has finished in [309] ms
+19-May-2022 16:57:22.713 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\host-manager]
+19-May-2022 16:57:22.748 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\host-manager] has finished in [35] ms
+19-May-2022 16:57:22.749 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\manager]
+19-May-2022 16:57:22.777 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\manager] has finished in [28] ms
+19-May-2022 16:57:22.778 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\ROOT]
+19-May-2022 16:57:22.801 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\ROOT] has finished in [23] ms
+19-May-2022 16:57:22.807 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-9090"]
+19-May-2022 16:57:23.139 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [1322] milliseconds
+19-May-2022 16:57:23.145 SEVERE [main] org.apache.catalina.core.StandardServer.await Failed to create server shutdown socket on address [localhost] and port [8005] (base port [8005] and offset [0])
+	java.net.BindException: Address already in use: NET_Bind
+		at java.base/java.net.PlainSocketImpl.bind0(Native Method)
+		at java.base/java.net.PlainSocketImpl.socketBind(PlainSocketImpl.java:132)
+		at java.base/java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:452)
+		at java.base/java.net.ServerSocket.bind(ServerSocket.java:395)
+		at java.base/java.net.ServerSocket.<init>(ServerSocket.java:257)
+		at org.apache.catalina.core.StandardServer.await(StandardServer.java:577)
+		at org.apache.catalina.startup.Catalina.await(Catalina.java:864)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:810)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
+19-May-2022 16:57:23.145 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-9090"]
+19-May-2022 16:57:23.447 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+19-May-2022 16:57:23.461 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-9090"]
+19-May-2022 16:57:23.485 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-9090"]
+19-May-2022 17:00:15.763 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.63
+19-May-2022 17:00:15.767 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          May 11 2022 07:52:11 UTC
+19-May-2022 17:00:15.767 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.63.0
+19-May-2022 17:00:15.767 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+19-May-2022 17:00:15.768 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+19-May-2022 17:00:15.768 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+19-May-2022 17:00:15.768 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Amazon Corretto\jdk11.0.14_10
+19-May-2022 17:00:15.768 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.14.1+10-LTS
+19-May-2022 17:00:15.768 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Amazon.com Inc.
+19-May-2022 17:00:15.769 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63
+19-May-2022 17:00:15.769 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63
+19-May-2022 17:00:15.782 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+19-May-2022 17:00:15.783 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+19-May-2022 17:00:15.783 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+19-May-2022 17:00:15.783 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+19-May-2022 17:00:15.784 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+19-May-2022 17:00:15.784 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\conf\logging.properties
+19-May-2022 17:00:15.785 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+19-May-2022 17:00:15.785 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+19-May-2022 17:00:15.786 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+19-May-2022 17:00:15.786 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+19-May-2022 17:00:15.787 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63
+19-May-2022 17:00:15.787 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63
+19-May-2022 17:00:15.788 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\temp
+19-May-2022 17:00:15.796 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [C:\Program Files\Amazon Corretto\jdk11.0.14_10\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\VMware\VMware Player\bin\;C:\Program Files\Amazon Corretto\jdk11.0.14_10\bin;C:\Program Files\Python310\Scripts\;C:\Program Files\Python310\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Azure Data Studio\bin;C:\ProgramData\chocolatey\bin;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\nodejs\;E:\MATLAB\R2017b\runtime\win64;E:\MATLAB\R2017b\bin;C:\Program Files\MongoDB\Server\5.0\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\user\AppData\Local\Microsoft\WindowsApps;C:\Users\user\AppData\Local\Programs\Microsoft VS Code\bin;C:\intelFPGA\20.1\modelsim_ase\win32aloem;C:\intelFPGA_lite\20.1\modelsim_ase\win32aloem;C:\intelFPGA_lite\20.1\modelsim_ae\win32aloem;C:\Users\user\Downloads\quartus\modelsim_ase\win32aloem;C:\MinGW\bin;C:\Users\user\.dotnet\tools;C:\Program Files\Azure Data Studio\bin;C:\Users\user\AppData\Local\GitHubDesktop\bin;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.3.2\bin;;C:\Users\user\AppData\Roaming\npm;C:\Program Files\MongoDB\Server\5.0\bin;;.]
+19-May-2022 17:00:16.097 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-9090"]
+19-May-2022 17:00:16.128 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [559] milliseconds
+19-May-2022 17:00:16.217 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+19-May-2022 17:00:16.217 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.63]
+19-May-2022 17:00:16.227 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\docs]
+19-May-2022 17:00:16.854 WARNING [main] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [347] milliseconds.
+19-May-2022 17:00:16.875 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\docs] has finished in [647] ms
+19-May-2022 17:00:16.875 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\examples]
+19-May-2022 17:00:17.217 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\examples] has finished in [342] ms
+19-May-2022 17:00:17.217 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\host-manager]
+19-May-2022 17:00:17.253 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\host-manager] has finished in [36] ms
+19-May-2022 17:00:17.253 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\manager]
+19-May-2022 17:00:17.286 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\manager] has finished in [32] ms
+19-May-2022 17:00:17.286 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\ROOT]
+19-May-2022 17:00:17.310 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\ROOT] has finished in [24] ms
+19-May-2022 17:00:17.315 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-9090"]
+19-May-2022 17:00:17.667 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [1538] milliseconds
+19-May-2022 17:00:17.675 SEVERE [main] org.apache.catalina.core.StandardServer.await Failed to create server shutdown socket on address [localhost] and port [8005] (base port [8005] and offset [0])
+	java.net.BindException: Address already in use: NET_Bind
+		at java.base/java.net.PlainSocketImpl.bind0(Native Method)
+		at java.base/java.net.PlainSocketImpl.socketBind(PlainSocketImpl.java:132)
+		at java.base/java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:452)
+		at java.base/java.net.ServerSocket.bind(ServerSocket.java:395)
+		at java.base/java.net.ServerSocket.<init>(ServerSocket.java:257)
+		at org.apache.catalina.core.StandardServer.await(StandardServer.java:577)
+		at org.apache.catalina.startup.Catalina.await(Catalina.java:864)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:810)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
+19-May-2022 17:00:17.676 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-9090"]
+19-May-2022 17:00:17.999 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+19-May-2022 17:00:18.015 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-9090"]
+19-May-2022 17:00:18.036 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-9090"]
+19-May-2022 17:10:02.800 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.63
+19-May-2022 17:10:02.803 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          May 11 2022 07:52:11 UTC
+19-May-2022 17:10:02.804 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.63.0
+19-May-2022 17:10:02.804 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+19-May-2022 17:10:02.804 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+19-May-2022 17:10:02.805 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+19-May-2022 17:10:02.805 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Amazon Corretto\jdk11.0.14_10
+19-May-2022 17:10:02.805 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.14.1+10-LTS
+19-May-2022 17:10:02.805 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Amazon.com Inc.
+19-May-2022 17:10:02.805 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63
+19-May-2022 17:10:02.805 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63
+19-May-2022 17:10:02.819 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+19-May-2022 17:10:02.820 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+19-May-2022 17:10:02.820 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+19-May-2022 17:10:02.820 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+19-May-2022 17:10:02.820 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+19-May-2022 17:10:02.821 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\conf\logging.properties
+19-May-2022 17:10:02.822 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+19-May-2022 17:10:02.822 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+19-May-2022 17:10:02.823 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+19-May-2022 17:10:02.823 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+19-May-2022 17:10:02.824 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63
+19-May-2022 17:10:02.824 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63
+19-May-2022 17:10:02.825 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\temp
+19-May-2022 17:10:03.086 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [C:\Program Files\Amazon Corretto\jdk11.0.14_10\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\VMware\VMware Player\bin\;C:\Program Files\Amazon Corretto\jdk11.0.14_10\bin;C:\Program Files\Python310\Scripts\;C:\Program Files\Python310\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Azure Data Studio\bin;C:\ProgramData\chocolatey\bin;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\nodejs\;E:\MATLAB\R2017b\runtime\win64;E:\MATLAB\R2017b\bin;C:\Program Files\MongoDB\Server\5.0\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\user\AppData\Local\Microsoft\WindowsApps;C:\Users\user\AppData\Local\Programs\Microsoft VS Code\bin;C:\intelFPGA\20.1\modelsim_ase\win32aloem;C:\intelFPGA_lite\20.1\modelsim_ase\win32aloem;C:\intelFPGA_lite\20.1\modelsim_ae\win32aloem;C:\Users\user\Downloads\quartus\modelsim_ase\win32aloem;C:\MinGW\bin;C:\Users\user\.dotnet\tools;C:\Program Files\Azure Data Studio\bin;C:\Users\user\AppData\Local\GitHubDesktop\bin;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.3.2\bin;;C:\Users\user\AppData\Roaming\npm;C:\Program Files\MongoDB\Server\5.0\bin;;.]
+19-May-2022 17:10:03.422 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-9090"]
+19-May-2022 17:10:03.465 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [839] milliseconds
+19-May-2022 17:10:03.538 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+19-May-2022 17:10:03.538 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.63]
+19-May-2022 17:10:03.547 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\docs]
+19-May-2022 17:10:05.549 WARNING [main] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [386] milliseconds.
+19-May-2022 17:10:06.107 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\docs] has finished in [2,560] ms
+19-May-2022 17:10:06.108 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\examples]
+19-May-2022 17:10:15.605 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\examples] has finished in [9,497] ms
+19-May-2022 17:10:15.606 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\host-manager]
+19-May-2022 17:10:15.840 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\host-manager] has finished in [234] ms
+19-May-2022 17:10:15.841 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\manager]
+19-May-2022 17:10:15.947 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\manager] has finished in [106] ms
+19-May-2022 17:10:15.948 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\ROOT]
+19-May-2022 17:10:16.057 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\ROOT] has finished in [109] ms
+19-May-2022 17:10:16.088 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-9090"]
+19-May-2022 17:10:16.608 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [13142] milliseconds
+19-May-2022 17:34:48.375 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.reload Reloading context []
+19-May-2022 17:34:48.380 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Reloading Context with name [] has started
+19-May-2022 17:34:48.459 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Reloading Context with name [] is completed
+19-May-2022 17:35:08.492 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.reload Reloading context []
+19-May-2022 17:35:08.494 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Reloading Context with name [] has started
+19-May-2022 17:35:08.550 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Reloading Context with name [] is completed
+19-May-2022 17:35:24.011 INFO [Thread-2] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-9090"]
+19-May-2022 17:35:24.327 INFO [Thread-2] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+19-May-2022 17:35:24.352 INFO [Thread-2] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-9090"]
+19-May-2022 17:35:24.365 INFO [Thread-2] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-9090"]
+19-May-2022 17:35:29.303 SEVERE [main] org.apache.catalina.startup.Catalina.stopServer Could not contact [localhost:8005] (base port [8005] and offset [0]). Tomcat may not be running.
+19-May-2022 17:35:32.005 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.63
+19-May-2022 17:35:32.009 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          May 11 2022 07:52:11 UTC
+19-May-2022 17:35:32.009 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.63.0
+19-May-2022 17:35:32.009 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+19-May-2022 17:35:32.010 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+19-May-2022 17:35:32.010 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+19-May-2022 17:35:32.011 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Amazon Corretto\jdk11.0.14_10
+19-May-2022 17:35:32.011 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.14.1+10-LTS
+19-May-2022 17:35:32.011 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Amazon.com Inc.
+19-May-2022 17:35:32.011 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63
+19-May-2022 17:35:32.011 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63
+19-May-2022 17:35:32.029 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+19-May-2022 17:35:32.029 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+19-May-2022 17:35:32.030 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+19-May-2022 17:35:32.030 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+19-May-2022 17:35:32.030 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+19-May-2022 17:35:32.031 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\conf\logging.properties
+19-May-2022 17:35:32.031 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+19-May-2022 17:35:32.032 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+19-May-2022 17:35:32.032 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+19-May-2022 17:35:32.033 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+19-May-2022 17:35:32.033 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63
+19-May-2022 17:35:32.034 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63
+19-May-2022 17:35:32.036 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\temp
+19-May-2022 17:35:32.044 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [C:\Program Files\Amazon Corretto\jdk11.0.14_10\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\VMware\VMware Player\bin\;C:\Program Files\Amazon Corretto\jdk11.0.14_10\bin;C:\Program Files\Python310\Scripts\;C:\Program Files\Python310\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Azure Data Studio\bin;C:\ProgramData\chocolatey\bin;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\nodejs\;E:\MATLAB\R2017b\runtime\win64;E:\MATLAB\R2017b\bin;C:\Program Files\MongoDB\Server\5.0\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\user\AppData\Local\Microsoft\WindowsApps;C:\Users\user\AppData\Local\Programs\Microsoft VS Code\bin;C:\intelFPGA\20.1\modelsim_ase\win32aloem;C:\intelFPGA_lite\20.1\modelsim_ase\win32aloem;C:\intelFPGA_lite\20.1\modelsim_ae\win32aloem;C:\Users\user\Downloads\quartus\modelsim_ase\win32aloem;C:\MinGW\bin;C:\Users\user\.dotnet\tools;C:\Program Files\Azure Data Studio\bin;C:\Users\user\AppData\Local\GitHubDesktop\bin;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.3.2\bin;;C:\Users\user\AppData\Roaming\npm;C:\Program Files\MongoDB\Server\5.0\bin;;.]
+19-May-2022 17:35:32.381 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-9090"]
+19-May-2022 17:35:32.410 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [605] milliseconds
+19-May-2022 17:35:32.474 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+19-May-2022 17:35:32.475 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.63]
+19-May-2022 17:35:32.483 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\docs]
+19-May-2022 17:35:33.081 WARNING [main] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [335] milliseconds.
+19-May-2022 17:35:33.102 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\docs] has finished in [619] ms
+19-May-2022 17:35:33.103 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\examples]
+19-May-2022 17:35:33.463 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\examples] has finished in [360] ms
+19-May-2022 17:35:33.464 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\host-manager]
+19-May-2022 17:35:33.501 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\host-manager] has finished in [37] ms
+19-May-2022 17:35:33.502 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\manager]
+19-May-2022 17:35:33.533 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\manager] has finished in [32] ms
+19-May-2022 17:35:33.534 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\ROOT]
+19-May-2022 17:35:33.571 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\ROOT] has finished in [37] ms
+19-May-2022 17:35:33.576 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-9090"]
+19-May-2022 17:35:33.914 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [1502] milliseconds
+19-May-2022 17:36:44.696 INFO [Thread-2] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-9090"]
+19-May-2022 17:36:45.014 INFO [Thread-2] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+19-May-2022 17:36:45.048 INFO [Thread-2] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-9090"]
+19-May-2022 17:36:45.060 INFO [Thread-2] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-9090"]
+19-May-2022 17:36:48.017 SEVERE [main] org.apache.catalina.startup.Catalina.stopServer Could not contact [localhost:8005] (base port [8005] and offset [0]). Tomcat may not be running.
+19-May-2022 17:37:51.672 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.63
+19-May-2022 17:37:51.675 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          May 11 2022 07:52:11 UTC
+19-May-2022 17:37:51.675 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.63.0
+19-May-2022 17:37:51.675 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+19-May-2022 17:37:51.676 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+19-May-2022 17:37:51.676 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+19-May-2022 17:37:51.676 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Amazon Corretto\jdk11.0.14_10
+19-May-2022 17:37:51.676 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.14.1+10-LTS
+19-May-2022 17:37:51.676 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Amazon.com Inc.
+19-May-2022 17:37:51.676 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63
+19-May-2022 17:37:51.677 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63
+19-May-2022 17:37:51.687 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+19-May-2022 17:37:51.687 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+19-May-2022 17:37:51.688 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+19-May-2022 17:37:51.688 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+19-May-2022 17:37:51.688 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+19-May-2022 17:37:51.688 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\conf\logging.properties
+19-May-2022 17:37:51.689 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+19-May-2022 17:37:51.694 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+19-May-2022 17:37:51.694 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+19-May-2022 17:37:51.694 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+19-May-2022 17:37:51.695 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63
+19-May-2022 17:37:51.695 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63
+19-May-2022 17:37:51.696 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\temp
+19-May-2022 17:37:51.705 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [C:\Program Files\Amazon Corretto\jdk11.0.14_10\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\VMware\VMware Player\bin\;C:\Program Files\Amazon Corretto\jdk11.0.14_10\bin;C:\Program Files\Python310\Scripts\;C:\Program Files\Python310\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Azure Data Studio\bin;C:\ProgramData\chocolatey\bin;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\nodejs\;E:\MATLAB\R2017b\runtime\win64;E:\MATLAB\R2017b\bin;C:\Program Files\MongoDB\Server\5.0\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\user\AppData\Local\Microsoft\WindowsApps;C:\Users\user\AppData\Local\Programs\Microsoft VS Code\bin;C:\intelFPGA\20.1\modelsim_ase\win32aloem;C:\intelFPGA_lite\20.1\modelsim_ase\win32aloem;C:\intelFPGA_lite\20.1\modelsim_ae\win32aloem;C:\Users\user\Downloads\quartus\modelsim_ase\win32aloem;C:\MinGW\bin;C:\Users\user\.dotnet\tools;C:\Program Files\Azure Data Studio\bin;C:\Users\user\AppData\Local\GitHubDesktop\bin;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.3.2\bin;;C:\Users\user\AppData\Roaming\npm;C:\Program Files\MongoDB\Server\5.0\bin;;.]
+19-May-2022 17:37:52.039 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-9090"]
+19-May-2022 17:37:52.068 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [607] milliseconds
+19-May-2022 17:37:52.137 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+19-May-2022 17:37:52.137 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.63]
+19-May-2022 17:37:52.145 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\docs]
+19-May-2022 17:37:52.736 WARNING [main] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [342] milliseconds.
+19-May-2022 17:37:52.758 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\docs] has finished in [613] ms
+19-May-2022 17:37:52.759 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\examples]
+19-May-2022 17:37:53.089 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\examples] has finished in [331] ms
+19-May-2022 17:37:53.090 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\host-manager]
+19-May-2022 17:37:53.125 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\host-manager] has finished in [35] ms
+19-May-2022 17:37:53.126 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\manager]
+19-May-2022 17:37:53.158 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\manager] has finished in [33] ms
+19-May-2022 17:37:53.159 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\ROOT]
+19-May-2022 17:37:53.190 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\ROOT] has finished in [30] ms
+19-May-2022 17:37:53.195 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-9090"]
+19-May-2022 17:37:53.539 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [1469] milliseconds
+19-May-2022 17:56:47.235 INFO [Thread-2] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-9090"]
+19-May-2022 17:56:47.551 INFO [Thread-2] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+19-May-2022 17:56:47.589 INFO [Thread-2] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-9090"]
+19-May-2022 17:56:47.608 INFO [Thread-2] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-9090"]
+19-May-2022 17:56:55.504 SEVERE [main] org.apache.catalina.startup.Catalina.stopServer Could not contact [localhost:8005] (base port [8005] and offset [0]). Tomcat may not be running.
+19-May-2022 17:58:16.234 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.63
+19-May-2022 17:58:16.237 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          May 11 2022 07:52:11 UTC
+19-May-2022 17:58:16.238 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.63.0
+19-May-2022 17:58:16.238 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+19-May-2022 17:58:16.238 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+19-May-2022 17:58:16.238 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+19-May-2022 17:58:16.238 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Amazon Corretto\jdk11.0.14_10
+19-May-2022 17:58:16.239 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.14.1+10-LTS
+19-May-2022 17:58:16.239 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Amazon.com Inc.
+19-May-2022 17:58:16.239 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63
+19-May-2022 17:58:16.239 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63
+19-May-2022 17:58:16.252 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+19-May-2022 17:58:16.253 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+19-May-2022 17:58:16.253 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+19-May-2022 17:58:16.253 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+19-May-2022 17:58:16.253 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+19-May-2022 17:58:16.254 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\conf\logging.properties
+19-May-2022 17:58:16.255 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+19-May-2022 17:58:16.255 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+19-May-2022 17:58:16.256 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+19-May-2022 17:58:16.256 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+19-May-2022 17:58:16.257 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63
+19-May-2022 17:58:16.257 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63
+19-May-2022 17:58:16.258 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\temp
+19-May-2022 17:58:16.265 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [C:\Program Files\Amazon Corretto\jdk11.0.14_10\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\VMware\VMware Player\bin\;C:\Program Files\Amazon Corretto\jdk11.0.14_10\bin;C:\Program Files\Python310\Scripts\;C:\Program Files\Python310\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Azure Data Studio\bin;C:\ProgramData\chocolatey\bin;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\nodejs\;E:\MATLAB\R2017b\runtime\win64;E:\MATLAB\R2017b\bin;C:\Program Files\MongoDB\Server\5.0\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\user\AppData\Local\Microsoft\WindowsApps;C:\Users\user\AppData\Local\Programs\Microsoft VS Code\bin;C:\intelFPGA\20.1\modelsim_ase\win32aloem;C:\intelFPGA_lite\20.1\modelsim_ase\win32aloem;C:\intelFPGA_lite\20.1\modelsim_ae\win32aloem;C:\Users\user\Downloads\quartus\modelsim_ase\win32aloem;C:\MinGW\bin;C:\Users\user\.dotnet\tools;C:\Program Files\Azure Data Studio\bin;C:\Users\user\AppData\Local\GitHubDesktop\bin;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.3.2\bin;;C:\Users\user\AppData\Roaming\npm;C:\Program Files\MongoDB\Server\5.0\bin;;.]
+19-May-2022 17:58:16.588 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-9090"]
+19-May-2022 17:58:16.616 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [598] milliseconds
+19-May-2022 17:58:16.679 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+19-May-2022 17:58:16.679 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.63]
+19-May-2022 17:58:16.688 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\docs]
+19-May-2022 17:58:17.294 WARNING [main] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [341] milliseconds.
+19-May-2022 17:58:17.315 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\docs] has finished in [627] ms
+19-May-2022 17:58:17.316 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\examples]
+19-May-2022 17:58:17.642 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\examples] has finished in [327] ms
+19-May-2022 17:58:17.643 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\host-manager]
+19-May-2022 17:58:17.677 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\host-manager] has finished in [34] ms
+19-May-2022 17:58:17.677 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\manager]
+19-May-2022 17:58:17.711 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\manager] has finished in [34] ms
+19-May-2022 17:58:17.712 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\ROOT]
+19-May-2022 17:58:17.746 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\user\Downloads\apache-tomcat-9.0.63\apache-tomcat-9.0.63\webapps\ROOT] has finished in [34] ms
+19-May-2022 17:58:17.752 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-9090"]
+19-May-2022 17:58:18.092 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [1474] milliseconds
+19-May-2022 18:16:48.960 INFO [Thread-2] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-9090"]
+19-May-2022 18:16:49.270 INFO [Thread-2] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+19-May-2022 18:16:49.309 INFO [Thread-2] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-9090"]
+19-May-2022 18:16:49.330 INFO [Thread-2] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-9090"]
