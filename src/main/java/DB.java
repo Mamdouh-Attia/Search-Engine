@@ -26,7 +26,7 @@ public class DB {
 
     }
     public MongoDatabase connecttoCrawlerDataBase(){
-        MongoDatabase db=client.getDatabase("CrawlerDataBase");
+        MongoDatabase db=client.getDatabase("CrawlerResultDB");
 
 
         return db;
@@ -52,7 +52,7 @@ public class DB {
 
     public ArrayList<String> getStopWords() throws IOException {
         ArrayList<String>StopWords = new ArrayList<String>();
-        FileInputStream StopFile=new FileInputStream("D:\\2nd year 2nd term\\JDK\\eclipse\\MongoDBApp\\stopwords.txt");
+        FileInputStream StopFile=new FileInputStream("D:\\__Work\\Search Engine\\src\\stopwords.txt");
         byte[] b = new byte[ StopFile.available()];
 
         StopFile.read(b);

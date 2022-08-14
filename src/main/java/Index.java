@@ -62,10 +62,10 @@ public class Index {
         DB dbi2=new DB();
         db2=dbi2.connecttoCrawlerDataBase();
 
-        int TotalNumberOfPages=5032;
+        int TotalNumberOfPages=dbi2.getCrawledPages();
         ////////////////////////////////////////////////////////////////////////////
         int k=0;
-        MongoCollection<org.bson.Document> CrawlingCollection = db2.getCollection("crawlingCollection");
+        MongoCollection<org.bson.Document> CrawlingCollection = db2.getCollection("CrawlerResult");
         FindIterable<org.bson.Document> URLStoIndexiterable = CrawlingCollection.find().noCursorTimeout(true);
         HashMap<String,HashMap<String,org.bson.Document>>IndexerMap= new HashMap<String,HashMap<String,org.bson.Document>>() ;
 
@@ -76,7 +76,7 @@ public class Index {
 
             System.out.println("///////////////////////"+k+"////////////////////////////////");
             try {
-                Document doc =  Jsoup.connect((String) URLstobeIndexed.get("URL")).get();
+                Document doc =  Jsoup.connect((String) URLstobeIndexed.get("url")).get();
 
                 //Get The page conent
                 String PageText=doc.text();
@@ -114,10 +114,10 @@ public class Index {
                             {
                                 //collection exists
                                 HashMap<String,org.bson.Document> WordDocuments = IndexerMap.get(pageTextWords[i]);
-                                boolean URLExist = WordDocuments.containsKey((String) URLstobeIndexed.get("URL"));
+                                boolean URLExist = WordDocuments.containsKey((String) URLstobeIndexed.get("url"));
                                 if(URLExist)
                                 {
-                                    org.bson.Document ThisDocument = WordDocuments.get((String) URLstobeIndexed.get("URL"));
+                                    org.bson.Document ThisDocument = WordDocuments.get((String) URLstobeIndexed.get("url"));
                                     int newTF =(int) ThisDocument.get("TF")+1;
                                     HashSet<Integer> positions= (HashSet<Integer>) ThisDocument.get("positions");
                                     positions.add(i);
@@ -130,7 +130,7 @@ public class Index {
                                     ThisDocument.replace("positions", positions);
                                     ThisDocument.replace("Tags", NewTags);
 
-                                    WordDocuments.replace((String) URLstobeIndexed.get("URL"), ThisDocument);
+                                    WordDocuments.replace((String) URLstobeIndexed.get("url"), ThisDocument);
                                 }
 
                                 if(!URLExist)
@@ -139,14 +139,14 @@ public class Index {
                                     HashSet<Integer> positions = new HashSet<>();
                                     positions.add(i);
                                     //positions to be used in phrase searching
-                                    newdoc.append("URL",(String) URLstobeIndexed.get("URL"));
+                                    newdoc.append("url",(String) URLstobeIndexed.get("url"));
                                     newdoc.append("TF",1);
                                     newdoc.append("positions", positions);
                                     newdoc.append("Tags", Tags);
                                     newdoc.append("weights", 0);
-                                    //newdoc.append("PageRank", URLstobeIndexed.get("Popularity"));
+                                    newdoc.append("PageRank", URLstobeIndexed.get("popularity"));
                                     //Add popularity
-                                    WordDocuments.put((String) URLstobeIndexed.get("URL"), newdoc);
+                                    WordDocuments.put((String) URLstobeIndexed.get("url"), newdoc);
                                 }
                                 IndexerMap.replace(pageTextWords[i], WordDocuments);
                             }
@@ -157,15 +157,15 @@ public class Index {
                                 HashSet<Integer> positions = new HashSet<>();
                                 positions.add(i);
                                 //positions to be used in phrase searching
-                                newdoc.append("URL",(String) URLstobeIndexed.get("URL"));
+                                newdoc.append("url",(String) URLstobeIndexed.get("url"));
                                 newdoc.append("TF",1);
                                 newdoc.append("positions", positions);
                                 newdoc.append("Tags", Tags);
                                 newdoc.append("weights", 0);
-                                //newdoc.append("PageRank", URLstobeIndexed.get("Popularity"));
+                                newdoc.append("PageRank", URLstobeIndexed.get("popularity"));
                                 //Add popularity
                                 HashMap<String,org.bson.Document> WordDocuments=new HashMap<String,org.bson.Document>();
-                                WordDocuments.put((String) URLstobeIndexed.get("URL"), newdoc);
+                                WordDocuments.put((String) URLstobeIndexed.get("url"), newdoc);
                                 IndexerMap.put(pageTextWords[i], WordDocuments);
                             }
                         }
@@ -173,7 +173,7 @@ public class Index {
 
                 }
 
-                System.out.println("////////////////////"+(String) URLstobeIndexed.get("URL")+"////////////"+k+"///////////////////////");
+                System.out.println("////////////////////"+(String) URLstobeIndexed.get("url")+"////////////"+k+"///////////////////////");
 
             }
             catch(Exception e)
@@ -214,7 +214,7 @@ public class Index {
                 else
                     importance=0;
                 OneDocument.replace("weights", importance);
-                Documents.put((String)OneDocument.get("URL"), OneDocument);
+                Documents.put((String)OneDocument.get("url"), OneDocument);
                 //IndexerMap.replace(Wordentry.getKey(),  Documents);
 
             }

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module org.jetbrains.idea.maven.project.MavenProjectsManager.isMavenModule="true" type="JAVA_MODULE" version="4">
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_16">
-    <output url="file://$MODULE_DIR$/../2nd year 2nd term CMP/APT/project/servlets/apache-tomcat-9.0.63 (2)/apache-tomcat-9.0.63/apache-tomcat-9.0.63/webapps/ROOT/WEB-INF/classes" />
-    <output-test url="file://$MODULE_DIR$/../2nd year 2nd term CMP/APT/project/servlets/apache-tomcat-9.0.63 (2)/apache-tomcat-9.0.63/apache-tomcat-9.0.63/webapps/ROOT/WEB-INF/classes" />
+    <output url="file://$MODULE_DIR$/apache-tomcat-9.0.63/apache-tomcat-9.0.63/webapps/ROOT/WEB-INF/classes" />
+    <output-test url="file://$MODULE_DIR$/apache-tomcat-9.0.63/apache-tomcat-9.0.63/webapps/ROOT/WEB-INF/classes" />
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/src/main/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/main/resources" type="java-resource" />
@@ -11,6 +11,8 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="servlet-api" level="application" />
+    <orderEntry type="library" name="lucene-snowball-3.0.3 (1)" level="application" />
     <orderEntry type="library" name="Maven: com.panforge:robots:1.4.6" level="project" />
     <orderEntry type="library" name="Maven: org.jsoup:jsoup:1.13.1" level="project" />
     <orderEntry type="library" name="Maven: com.panforge:robots-http:1.0.10" level="project" />
@@ -20,7 +22,5 @@
     <orderEntry type="library" name="Maven: commons-codec:commons-codec:1.11" level="project" />
     <orderEntry type="library" name="Maven: com.shekhargulati.urlcleaner:urlcleaner:0.4.0" level="project" />
     <orderEntry type="library" name="Maven: org.mongodb:mongo-java-driver:3.12.11" level="project" />
-    <orderEntry type="library" name="servlet-api" level="application" />
-    <orderEntry type="library" name="lucene-snowball-3.0.3 (1)" level="application" />
   </component>
 </module>

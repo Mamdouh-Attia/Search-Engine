@@ -26,7 +26,7 @@ public class QueryProcessor {
         Query=Q;
         dbi=new DB();
         db=dbi.connecttoTestSearchIndex();
-        TotalNumberOfPages=5032;
+        TotalNumberOfPages= 5032;
         in=new Index();
         StopWords = dbi.getStopWords();
 
@@ -124,7 +124,7 @@ public class QueryProcessor {
                 FindIterable<org.bson.Document> ThisWordDocuments = Documents.find();
                 for(org.bson.Document URLDocument : ThisWordDocuments)
                 {
-                    ThisWordURLs.add((String) URLDocument.get("URL")) ;
+                    ThisWordURLs.add((String) URLDocument.get("url")) ;
                 }
                 ListOfURLLists.add(ThisWordURLs);
 
@@ -165,25 +165,33 @@ public class QueryProcessor {
 
                         for(org.bson.Document URLDocument : ThisWordDocuments)
                         {
-                            if(((String) URLDocument.get("URL")).equals(URL))
+                            if(((String) URLDocument.get("url")).equals(URL))
                             {
                                 int FirstWordWeight=(int) URLDocument.get("weights");
                                 Weight=FirstWordWeight;
+                                PageRank=(int)URLDocument.get("PageRank");
                             }
                         }
                     }
                     //==//
                     Document doc = Jsoup.parse(URLResult);
                     String wantedlines="";
-                    if ((doc.text().length())-doc.text().indexOf(Original)>30)
-                        wantedlines=(doc.text()).substring(doc.text().indexOf(Original)  , doc.text().indexOf(Original)+30);
-                    else
-                        wantedlines=(doc.text()).substring(doc.text().indexOf(Original)  , doc.text().length());
+                    if(doc.text().contains(QueryWords[i])){
+                        if ((doc.text().length())-doc.text().indexOf(QueryWords[i])>30)
+                            wantedlines=(doc.text()).substring(doc.text().indexOf(QueryWords[i]),doc.text().indexOf(QueryWords[i])+30);
+                        else
+                            wantedlines=(doc.text()).substring(doc.text().indexOf(QueryWords[i]), (doc.text().length())-doc.text().indexOf(QueryWords[i]));
+                        }
+                    else{
+                        System.out.println("The word doesn't exist");
+                    }
+
                     PUI.setplainText(wantedlines);
                     PUI.settitle(doc.title());
                     PUI.setURL(URLResult);
                     PUI.setPhraseFrequency(PhraseFrequency);
                     PUI.setWeight(Weight);
+                    PUI.setPageRank(PageRank);
                     listOfURLs.add(PUI) ;
                 }
             }
@@ -192,14 +200,26 @@ public class QueryProcessor {
         //
         PhraseURLInfoComparator com = new PhraseURLInfoComparator();
         Collections.sort(listOfURLs, com);
-        return (ArrayList<FinalLinks>)((ArrayList<?>)(listOfURLs ));
+
+        ArrayList<FinalLinks> res  = new ArrayList<FinalLinks>();
+        for (PhraseURLInfo l:listOfURLs) {
+            FinalLinks finall = new FinalLinks();
+            finall.setURL(l.getURL());
+            finall.setplainText(l.getplainText());
+            finall.settitle(l.gettitle());
+            res.add(finall);
+            //System.out.println(finall.getURL());
+        }
+
+        return res;//(ArrayList<FinalLinks>)((ArrayList<?>)(listOfURLs ));
+
     }
 
 
     public ArrayList<FinalLinks> nonphraseSearching() throws IOException{
         //Not phrase
         //get query words
-
+        int PageRanknonstemmed= 0;
         String QueryWords[]=Query.split(" ");// To be processed to search by it in the data base
         String OriginalQueryWords[]=Query.split(" "); //To store the original words without processing
         //To store URLs containing the word without stemming and store their info needed to rank
@@ -208,6 +228,7 @@ public class QueryProcessor {
         ArrayList<Integer>No_Of_QueryWords_in_the_document= new ArrayList<>();
         ArrayList<Integer>PageRank= new ArrayList<>();
         ArrayList<Integer>WeightsList= new ArrayList<>();
+
         ArrayList<NonPhraseURLInfo> listOfURLs = new ArrayList<NonPhraseURLInfo>();
         int listOfURLsIndex=0;
         //To store URLs containing the word with stemming and store their info needed to rank
@@ -216,6 +237,7 @@ public class QueryProcessor {
         ArrayList<Integer>No_Of_QueryWords_in_the_documentStem= new ArrayList<>();
         ArrayList<Integer>PageRankStem= new ArrayList<>();
         ArrayList<Integer>WeightsListStem= new ArrayList<>();
+        int PageRankstemmed= 0;
         ArrayList<NonPhraseURLInfo> listOfStemmedURLs = new ArrayList<NonPhraseURLInfo>();
         int listOfStemmedURLsIndex=0;
         HashMap<String,MongoCollection<org.bson.Document>>RankerWordsMap = new HashMap<String,MongoCollection<org.bson.Document>>();
@@ -263,40 +285,41 @@ public class QueryProcessor {
                             int TF =(int) URLDocument.get("TF");
                             int TF_IDF = TF*IDF;
                             //Get Url stored in that document and retrieve the array of positions and array of tags in this document
-                            String URL= (String) URLDocument.get("URL");
+                            String URL= (String) URLDocument.get("url");
                             int wordWeigt=(int) URLDocument.get("weights");
-
+                            PageRankstemmed=(int) URLDocument.get("PageRank");
                             //check if a word from the query exists in the non stemming form in this URL(the URL exist in the list of the URLs containing the non stemming word)
 
                             //boolean URLExist=false;
                             int index=0;
                             //check if the URL contained before in the List of URLs containing a non stemmed word from the query
-                            if(URLLists.containsKey(URL))
-                            {//This URL exists in the result
-                                index=URLLists.get(URL);
+                            if(URLLists.containsKey(URL)) {//This URL exists in the result
+                                index = URLLists.get(URL);
                                 //This URL exists in the result
                                 //increase the TF_IDF, the weight sum of words and the count of words in it
                                 //the page rank will not change
 
-                                NonPhraseURLInfo npi= listOfURLs.get(index);
+                                NonPhraseURLInfo npi = listOfURLs.get(index);
 
-                                int LastTF_IDF=npi.getTF_IDF();
-                                TF_IDF+=LastTF_IDF;
+                                int LastTF_IDF = npi.getTF_IDF();
+                                TF_IDF += LastTF_IDF;
                                 npi.setTF_IDF(TF_IDF);
 
-                                int NumberOfwORDS=npi.getNo_Of_QueryWords_in_the_document();
+                                int NumberOfwORDS = npi.getNo_Of_QueryWords_in_the_document();
                                 NumberOfwORDS++;
                                 npi.setNo_Of_QueryWords_in_the_document(NumberOfwORDS);
 
-                                int OldWeights=npi.getWeight();
-                                OldWeights+=wordWeigt;
+                                int OldWeights = npi.getWeight();
+                                OldWeights += wordWeigt;
                                 npi.setWeight(OldWeights);
                                 Document doc = Jsoup.parse(URL);
-                                String wantedlines="";
-                                if ((doc.text().length())>30)
-                                    wantedlines=(doc.text()).substring(0  , +30);
-                                else
-                                    wantedlines=(doc.text()).substring(0, doc.text().length());
+                                String wantedlines = "";
+                                if (doc.text().contains(QueryWords[i])){
+                                    if ((doc.text().length()) - doc.text().indexOf(QueryWords[i]) > 30)
+                                        wantedlines = (doc.text()).substring(doc.text().indexOf(QueryWords[i]), doc.text().indexOf(QueryWords[i]) + 30);
+                                    else
+                                        wantedlines = (doc.text()).substring(doc.text().indexOf(QueryWords[i]), (doc.text().length()) - doc.text().indexOf(QueryWords[i]));
+                            }
                                 npi.setplainText(wantedlines);
                                 npi.settitle(doc.title());
 
@@ -311,11 +334,11 @@ public class QueryProcessor {
                                 String PageContent[]=Parsed.text().split(" ");
                                 //retrieve the list of positions of this stem in the URL
                                 ArrayList<Integer> positions= (ArrayList<Integer>) URLDocument.get("positions");
-
                                 for(int k=0;k<positions.size();k++)
                                 {
                                     //for each position of the stem check if the word in that position is the original word in the query(without processing)
-                                    if(PageContent[positions.get(k)].replaceAll( "[.,:\" ]","").trim().toLowerCase().equals(OriginalQueryWords[i].trim().toLowerCase()))
+
+                                    if(PageContent.length<positions.get(k)&&PageContent[positions.get(k)].replaceAll( "[.,:\" ]","").trim().toLowerCase().equals(OriginalQueryWords[i].trim().toLowerCase()))
                                     {
                                         ContainsThisWordWithoutStemming=true;
                                         break;
@@ -325,6 +348,7 @@ public class QueryProcessor {
                                 {
                                     //this URL doesn't contain this word without stemming
                                     //Search for it in the List of URL containing stemmed words
+                                    PageRanknonstemmed=(int) URLDocument.get("PageRank");
                                     index=0;
                                     if(URLListsStem.containsKey(URL))
                                     {//This URL exists in the result
@@ -357,14 +381,27 @@ public class QueryProcessor {
                                         npi.setTF_IDF(TF_IDF);
                                         npi.setWeight(wordWeigt);
                                         npi.setNo_Of_QueryWords_in_the_document(1);
-                                        Document doc = Jsoup.parse(URL);
+                                        Document doc =  Jsoup.connect(URL).get();
                                         String wantedlines="";
-                                        if ((doc.text().length())>30)
-                                            wantedlines=(doc.text()).substring(0  , 30);
-                                        else
-                                            wantedlines=(doc.text()).substring(0 , doc.text().length());
+                                            if(doc.text().contains(QueryWords[i])){
+                                                if((doc.text().length()-doc.text().indexOf(QueryWords[i]))>30){
+                                                    wantedlines=(doc.text()).substring(doc.text().indexOf(QueryWords[i],doc.text().indexOf(QueryWords[i]+30)));
+                                                }
+                                                else{
+
+                                                    wantedlines=(doc.text()).substring(doc.text().indexOf(QueryWords[i],(doc.text().length()-doc.text().indexOf(QueryWords[i]))));
+
+                                                }
+
+                                            }
+                                            else{
+                                                System.out.println("The word doesn't exist");
+                                            }
+
+                                           // wantedlines=(doc.text()).substring(0  , 30);
                                         npi.setplainText(wantedlines);
                                         npi.settitle(doc.title());
+                                        npi.setPageRank(PageRankstemmed);
                                         listOfStemmedURLs.add(npi);
                                     }
                                 }
@@ -391,12 +428,19 @@ public class QueryProcessor {
                                     npi.setWeight(wordWeigt);
                                     Document doc = Jsoup.parse(URL);
                                     String wantedlines="";
-                                    if ((doc.text().length())>30)
-                                        wantedlines=(doc.text()).substring(0  , 30);
-                                    else
-                                        wantedlines=(doc.text()).substring(0  , doc.text().length());
+                                    if(doc.text().contains(QueryWords[i])){
+                                        if ((doc.text().length())-doc.text().indexOf(QueryWords[i])>30)
+                                            wantedlines=(doc.text()).substring(doc.text().indexOf(QueryWords[i]),doc.text().indexOf(QueryWords[i])+30);
+                                        else
+                                            wantedlines=(doc.text()).substring(doc.text().indexOf(QueryWords[i]), (doc.text().length())-doc.text().indexOf(QueryWords[i]));
+                                    }
+                                    else{
+                                        System.out.println("The word doesn't exist");
+                                    }
+
                                     npi.setplainText(wantedlines);
                                     npi.settitle(doc.title());
+                                    npi.setPageRank(PageRanknonstemmed);
                                     listOfURLs.add(npi);
                                 }
                             }
@@ -411,7 +455,17 @@ public class QueryProcessor {
         Collections.sort(listOfStemmedURLs, com);
         listOfURLs.addAll(listOfStemmedURLs);
 
-        return (ArrayList<FinalLinks>)((ArrayList<?>)(listOfURLs ));
+        ArrayList<FinalLinks> res  = new ArrayList<FinalLinks>();
+        for (NonPhraseURLInfo l:listOfURLs) {
+            FinalLinks finall = new FinalLinks();
+            finall.setURL(l.getURL());
+            finall.setplainText(l.getplainText());
+            finall.settitle(l.gettitle());
+            res.add(finall);
+            //System.out.println(finall.getURL());
+        }
+
+        return res;//(ArrayList<FinalLinks>)((ArrayList<?>)(listOfURLs ));
     }
 
 

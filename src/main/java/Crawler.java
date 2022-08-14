@@ -24,7 +24,7 @@ import java.util.*;
 public class Crawler implements Runnable {
     // first let's define our variables
     int crawledPages; //count of crawled pages
-    static final int MX_link_count = 50; // How many urls we want to crawl?
+    static final int MX_link_count = 5000; // How many urls we want to crawl?
     // list of visited links
     LinkedList<String> QueueLinks = new LinkedList<>();
     //list of compact strings

@@ -13,21 +13,21 @@ public class InterfaceHandler extends HttpServlet{
         System.out.println(input);
 
         Qr=new QueryProcessor(input);
-        ArrayList<FinalLinks>results=Qr.queryProcessorLogic();
+        ArrayList<FinalLinks> results=Qr.queryProcessorLogic();
 
 
         //query processor
-        //ArrayList<FinalLinks> results=new ArrayList<>();
+        /*ArrayList<FinalLinks> results=new ArrayList<>();
         FinalLinks r1=new FinalLinks();
         r1.setplainText("ttttttt");
         r1.settitle("ii");
         r1.setURL("wwww");
-        FinalLinks r2=new FinalLinks();
+        //FinalLinks r2=new FinalLinks();
 
-        FinalLinks r3=new FinalLinks();
+        //FinalLinks r3=new FinalLinks();
         results.add(r1);
-        results.add(r2);
-        results.add(r3);
+        //results.add(r2);
+        //results.add(r3);*/
 
         response.setContentType ("text/html");
 
@@ -119,7 +119,7 @@ public class InterfaceHandler extends HttpServlet{
                 "\n" +
 
                 "        <div class=\"results\">\n" +
-                "            <p class=\"text-muted\" style=\"padding-left: 30px;\">" + results.size() + " results</p>\n";
+                "            <p class=\"text-muted\" style=\"padding-left: 30px;\">" + (results==null? 0: results.size() )+ " results</p>\n";
 
         //int numOfPages= results.size()/10;
 
